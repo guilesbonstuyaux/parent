@@ -1,0 +1,10 @@
+
+# /
+/target
+/.*-pom.xml
+
+### Eclipse ###
+.metadata
+.settings/
+.project
+
