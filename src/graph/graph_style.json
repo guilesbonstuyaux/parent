@@ -1,0 +1,62 @@
+{
+  "graph": {
+    "rankdir": "LR"
+  },
+  "default-node": {
+    "type": "ellipse"
+  },
+  "default-edge": {
+    "style": "solid"
+  },
+  "edge-scope-styles": {
+    "test": {
+      "color": "grey"
+    }
+  },
+  "edge-resolution-styles": {
+    "omitted-for-duplicate": {
+      "style":"dashed",
+      "color": "green"
+    },
+    "omitted-for-conflict": {
+      "style":"bold",
+      "color":"lightpink",
+      "font": {
+        "name": "Courier"
+      }
+    }
+  },
+  "node-styles": {
+    "org.evangelion*,,test": {
+      "type": "box",
+      "style":"diagonals",
+      "color": "palegreen",
+      "fill-color": "palegreen",
+      "artifact-id-font": {
+            "size": "22",
+            "color": "grey"
+        }
+    },
+    "org.evangelion*,,": {
+      "type": "polygon",
+      "style":"filled",
+      "color": "green",
+      "fill-color": "palegreen",
+      "artifact-id-font": {
+            "size": "22",
+            "color": "black"
+        }
+    },
+    ",,test": {
+      "type": "box",
+      "style":"diagonals",
+      "color": "grey"
+    },
+    ",,provided": {
+      "type": "box",
+      "style":"filled",
+      "color": "blue",
+      "fill-color": "cornflowerblue"
+    }
+  }
+}
