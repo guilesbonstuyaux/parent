@@ -1,4 +1,4 @@
-org.evangelion full Dependencies Graph
+org.evangelion filtered dependencies Graph
 =================
 
 ![Image](images/dependency-graph.svg "graph")
