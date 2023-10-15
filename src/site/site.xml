@@ -23,7 +23,7 @@
 
   <body>
     <links>
-      <item name="Mother of all" href="https://github.com/guilesbonstuyaux" />
+      <item name="Mother of all" href="@project.url@" />
     </links>
 
     <menu ref="parent"/>

@@ -27,7 +27,7 @@
     }
   },
   "node-styles": {
-    "org.evangelion*,,test": {
+    "@project.groupId@*,,test": {
       "type": "box",
       "style":"diagonals",
       "color": "palegreen",
@@ -37,7 +37,7 @@
             "color": "grey"
         }
     },
-    "org.evangelion*,,": {
+    "@project.groupId@*,,": {
       "type": "polygon",
       "style":"filled",
       "color": "green",
