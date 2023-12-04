@@ -1,4 +1,4 @@
-net.renaulgu parent POM
+net.guilesbonstuyaux parent POM
 =================
 
-Parent pom configuration for org.evangelion projets.
+Parent pom configuration for net.guilesbonstuyaux projets.
