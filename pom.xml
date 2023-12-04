@@ -4,13 +4,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>net.renaulgu</groupId>
+	<groupId>net.guilesbonstuyaux</groupId>
 	<artifactId>parent</artifactId>
 	<!-- version is managed by git versioning extension -->
 	<version>1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>NET :: RENAULGU :: PARENT</name>
+	<name>NET :: GUILESBONSTUYAUX :: PARENT</name>
 	<description>Projects parent POM for maven projects</description>
 	<url>https://github.com/guilesbonstuyaux/parent</url>
 	<inceptionYear>2022</inceptionYear>
