@@ -29,6 +29,19 @@
 		</repository>
 	</distributionManagement>
 
+	<repositories>
+		<repository>
+			<id>guilesbonstuyaux</id>
+			<url>https://maven.pkg.github.com/guilesbonstuyaux/*</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</repository>
+	</repositories>
+
 	<properties>
 
 		<!-- Build settings -->
@@ -578,7 +591,8 @@
 									<resources>
 										<resource>
 											<filtering>true</filtering>
-											<directory>${project.build.directory}/site-tpl-resources/</directory>
+											<directory>
+												${project.build.directory}/site-tpl-resources/</directory>
 										</resource>
 									</resources>
 									<outputDirectory>${project.build.directory}/site-tpl/</outputDirectory>
@@ -715,7 +729,8 @@
 											<version>master-SNAPSHOT</version>
 											<classifier>site</classifier>
 											<type>xml</type>
-											<outputDirectory>${project.build.directory}/site-tpl-raw/</outputDirectory>
+											<outputDirectory>
+												${project.build.directory}/site-tpl-raw/</outputDirectory>
 											<destFileName>site.xml</destFileName>
 										</artifactItem>
 									</artifactItems>
