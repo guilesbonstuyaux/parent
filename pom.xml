@@ -35,7 +35,7 @@
 		<site>
 			<id>github</id>
 			<name>Maven site on GitHub</name>
-			<url>scm:git:ssh://git@github.com/guilesbonstuyaux/parent</url>
+			<url>scm:git:https://github.com/guilesbonstuyaux/parent</url>
 		</site>
 	</distributionManagement>
 
@@ -888,6 +888,26 @@
 				</plugins>
 			</build>
 		</profile>
+
+		<!-- Profile that pushes the site to GitHub's repository -->
+        <profile>
+            <id>push-site</id>
+            <build>
+                <plugins>
+                    <!-- Publish site folder to GitHub's gh-pages branch -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-scm-publish-plugin</artifactId>
+                        <configuration>
+                            <scmBranch>gh-pages</scmBranch>
+                            <checkinComment>Update for ${project.version}</checkinComment>
+                            <subDirectory>${project.version}/</subDirectory>
+                            <serverId>github</serverId>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
 
 	</profiles>
 
