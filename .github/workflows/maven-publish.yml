@@ -37,6 +37,12 @@ jobs:
     - name: Build site with Maven
       run: mvn -B site --file pom.xml
 
+    - name: Stage site with Maven
+      run: mvn -B site:stage --file pom.xml
+
+    - name: Publish site with Maven
+      run: mvn -B scm-publish:publish-scm --file pom.xml
+
     - name: Publish to GitHub Packages Apache Maven
       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
       env:
