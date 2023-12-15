@@ -12,7 +12,7 @@
   <skin>
     <groupId>org.apache.maven.skins</groupId>
     <artifactId>maven-fluido-skin</artifactId>
-    <version>1.12.0</version>
+    <version>2.0.0-M8</version>
   </skin>
   <custom>
     <fluidoSkin>
@@ -27,14 +27,14 @@
     </links>
 
     <menu ref="parent"/>
-    
+
     <menu name="Overview">
       <item name="Dependencies Graph" href="graph.html"/>
       <item name="Dependencies Graph Full" href="graph-full.html"/>
     </menu>
 
     <menu ref="modules" />
-    
+
     <menu ref="reports"/>
   </body>
 </project>
