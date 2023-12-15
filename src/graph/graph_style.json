@@ -40,8 +40,8 @@
     "@project.groupId@*,,": {
       "type": "polygon",
       "style":"filled",
-      "color": "green",
-      "fill-color": "palegreen",
+      "color": "blue",
+      "fill-color": "deepskyblue",
       "artifact-id-font": {
             "size": "22",
             "color": "black"

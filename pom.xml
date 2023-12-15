@@ -21,12 +21,22 @@
 		<tag>HEAD</tag>
 	</scm>
 
+    <ciManagement>
+        <system>GitHub Actions</system>
+        <url>https://github.com/guilesbonstuyaux/parent/actions</url>
+    </ciManagement>
+
 	<distributionManagement>
 		<repository>
 			<id>github</id>
 			<name>GitHub parent Packages</name>
 			<url>https://maven.pkg.github.com/guilesbonstuyaux/parent</url>
 		</repository>
+		<site>
+			<id>github</id>
+			<name>Maven site on GitHub</name>
+			<url>scm:git:ssh://git@github.com/guilesbonstuyaux/parent</url>
+		</site>
 	</distributionManagement>
 
 	<repositories>
@@ -83,6 +93,7 @@
 		<maven-project-info-reports-plugin.version>3.5.0</maven-project-info-reports-plugin.version>
 		<maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
 		<maven-release-plugin.version>3.0.1</maven-release-plugin.version>
+		<maven-scm-publish-plugin.version>3.2.1</maven-scm-publish-plugin.version>
 		<maven-shade-plugin.version>3.5.1</maven-shade-plugin.version>
 		<maven-site-plugin.version>4.0.0-M12</maven-site-plugin.version>
 		<maven-source-plugin.version>3.3.0</maven-source-plugin.version>
@@ -421,6 +432,14 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-scm-publish-plugin</artifactId>
+				<version>${maven-scm-publish-plugin.version}</version>
+				<configuration>
+					<scmBranch>gh-pages</scmBranch>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
